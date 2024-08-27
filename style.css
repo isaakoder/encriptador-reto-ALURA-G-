@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #00ff00;
+    font-size: 24px;
+    font-family: 'Creepster', cursive;
+}
+
+/* Estilos para los elementos de entrada */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222;
+    color: #00ff00;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #111;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Creepster', cursive;
+}
+
+button:hover {
+    background-color: #008800;
+}
+
+/* Estilos para el interruptor (switch) */
+#modo {
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#modo::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #008800;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+#modo:checked::before {
+    left: 20px;
+}
+
+/* Efecto Matrix */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('matrix-code-rain.gif');
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: -1;
+}

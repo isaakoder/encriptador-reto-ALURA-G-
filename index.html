@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado César</h1>
+        <label for="mensaje">Ingresa tu mensaje:</label>
+        <input type="text" id="mensaje" placeholder="Escribe aquí tu mensaje">
+        <button onclick="cifrarDescifrar()" id="botonCifrarDescifrar">Cifrar</button>
+        <button onclick="cleared()">Nuevo</button>
+        <p id="resultado"></p>
+        <label for="modo">Modo:</label>
+        <input type="checkbox" id="modo" onchange="nbutton()">
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
